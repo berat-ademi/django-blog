@@ -1,0 +1,155 @@
+/* Global styles */
+
+html {
+    font-size: 62.5%;  /* Sets the base font size to 10px */
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Georgia, Times, serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 2rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 1rem 0;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  h4 {
+    font-size: 2.4rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.6rem;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Post styles */
+  
+  .post {
+    margin-bottom: 3rem;
+  }
+  
+  .post-title {
+    font-size: 2.4rem;
+    margin: 0 0 1rem;
+  }
+  
+  .post-meta {
+    font-size: 1.6rem;
+    color: #888;
+    margin: 0 0 2rem;
+  }
+  
+  .post-body {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+  
+  .read-more {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .right-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 20px; 
+    padding: 1rem;
+  }
+
+  .right-links li:first-child {
+    margin-left: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .mypost{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mypost a{
+    color: #333;
+  }

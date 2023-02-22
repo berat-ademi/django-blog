@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="heading">Welcome to my blog</h1>
+  {% for post in posts %}
+  <div class="post">
+      <h2 class="post-title">{{ post.title }}</a></h2>
+      <div class="post-body">
+          {{ post.content|truncatechars:130 }}
+      </div>
+      <div class="post-meta">
+          <span class="post-date">{{ post.date_created|date:"F d, Y" }} by: {{ post.author }}</span>
+      </div>
+    <a href="{% url 'blog:post_detail' post.id %}" class="read-more">Read More</a>
+  </div>
+  {% endfor %}
+  <h6 class="paragraph">This is my first Django blog.</h6>
+  <a class="button" href="{% url 'blog:my_posts' %}">View my posts</a>
+{% endblock %}
